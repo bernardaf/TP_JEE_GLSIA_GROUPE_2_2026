@@ -1,0 +1,23 @@
+package com.ega.ega.dto;
+
+import com.ega.ega.model.TypeCompte;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class CompteDTO {
+    private Long id;
+    private String numeroCompte;
+    private TypeCompte typeCompte;
+    private LocalDateTime dateCreation;
+    private Double solde;
+    private Long proprietaireId;
+    private String nomCompletProprietaire;
+}
